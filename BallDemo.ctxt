@@ -1,8 +1,13 @@
 #BlueJ class context
-comment0.params=
-comment0.target=BallDemo()
-comment0.text=\r\n\ Create\ a\ BallDemo\ object.\ Creates\ a\ fresh\ canvas\ and\ makes\ it\ visible.\r\n
-comment1.params=
-comment1.target=void\ bounce()
-comment1.text=\r\n\ Simulate\ two\ bouncing\ balls\r\n
-numComments=2
+comment0.target=BallDemo
+comment0.text=\r\n\ Class\ BallDemo\ -\ a\ short\ demonstration\ showing\ animation\ of\ random\ bouncing\ balls\ with\ the\ \r\n\ Canvas\ class.\ The\ balls\ will\ bounce\ around\ inside\ a\ box.\r\n\r\n\ @author\ Giovanny\ Ospina\r\n\ @version\ 10.21.2017\r\n
+comment1.params=width\ height
+comment1.target=void\ setCanvasBox(int,\ int)
+comment1.text=\r\n\ Creates\ the\ box\ in\ which\ the\ balls\ will\ bounce\ within\ and\ rebound\ of\ each\ side.\r\n
+comment2.params=
+comment2.target=void\ boxBounce()
+comment2.text=\r\n\ Simulates\ a\ range\ of\ five\ to\ thirty\ random\ bouncing\ balls\ that\ move\ inside\ the\ box.\ This\ method\ randomly\ assigns\r\n\ the\ initial\ speed,\ position\ and\ color\ of\ the\ ball.\ After\ assigning\ all\ features,\ they\ are\ then\ added\ to\ the\ array\ \r\n\ where\ they\ later\ will\ be\ placed\ at\ a\ location\r\n
+comment3.params=
+comment3.target=void\ drawBox()
+comment3.text=\r\n\ This\ method\ draws\ a\ box\ that\ receives\ the\ dimensions\ of\ the\ canvas\ and\ then\ sets\ the\ walls\r\n\ of\ the\ rectangle\ to\ be\ five\ less\ than\ the\ dimensions\ of\ the\ canvas.\r\n
+numComments=4
