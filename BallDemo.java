@@ -46,41 +46,6 @@ public class BallDemo
             int g = randomColor.nextInt(255)+1;
             int b = randomColor.nextInt(255)+1;
             Random randomRgb = new Random();
-            
-            /*
-             * This conditional statement checks to see if the combined color values for red
-             * green and blue exceeds 425 because as this value gets higher the balls become more
-             * transparent.
-             */
-              
-            if((r+g+b) > 425)
-            {
-                /*
-                 * The random number generater chooses a random combination of two of the rgb colors
-                 * and divides their value by 7 so that the value is creating
-                 * a single color that is not too close to white and invisible.
-                 */
-               
-                int n = randomRgb.nextInt(3);
-                if(n == 0)
-                {
-                    r = r/7;
-                    g = g/7;
-                }
-                    
-                if(n == 1)
-                {
-                    g = g/7;
-                    b = b/7;
-                }
-                
-                if(n == 2)
-                {
-                    g = g/7;
-                    b = b/7;
-                }
-                
-            }
             Color colorSet = new Color(r,g,b);
 
             // Gets the size of the rectangle to draw the rectangle within.
