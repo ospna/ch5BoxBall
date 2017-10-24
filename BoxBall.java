@@ -64,7 +64,6 @@ public class BoxBall
      **/
 
     public void draw()
-
     {
         canvas.setForegroundColor(color);
         canvas.fillCircle(xPosition, yPosition, diameter);
@@ -78,7 +77,7 @@ public class BoxBall
     {
         int speed;
         int posNeg;
-        int finished=0;
+        int finished = 0;
         
         while (finished < 2)
         {
@@ -145,7 +144,7 @@ public class BoxBall
         xPosition += xSpeed;
 
         // Checks each wall
-        if (xPosition < leftWall ) 
+        if (xPosition < leftWall) 
         {
             xSpeed = -xSpeed;
         }
@@ -166,8 +165,7 @@ public class BoxBall
         }
 
         // draw the ball at its new position
-        draw();
-        
+        draw();        
         // draw the box so that it does not get washed away
         drawBox();
     }    

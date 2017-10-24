@@ -42,9 +42,9 @@ public class BallDemo
         for(int i = 5; i < 30; i++)
         { 
             //Randomly assigns red, green, blue colors in the range of 0 to 255. 
-            int r = randomColor.nextInt(255)+1;
-            int g = randomColor.nextInt(255)+1;
-            int b = randomColor.nextInt(255)+1;
+            int r = randomColor.nextInt(250)+1;
+            int g = randomColor.nextInt(250)+1;
+            int b = randomColor.nextInt(250)+1;
             Random randomRgb = new Random();
             Color colorSet = new Color(r,g,b);
 
@@ -108,10 +108,10 @@ public class BallDemo
         double y = 5;
         double widthToBeFixed = size.width;
         double heightToBeFixed = size.height;
-        double width = widthToBeFixed - 10.00;
-        double height = heightToBeFixed - 10.00;
-        Shape rectangle = (new Rectangle2D.Double(x, y, width, height));
-        myCanvas.draw(rectangle);
+        double width = widthToBeFixed - 10;
+        double height = heightToBeFixed - 10;
+        Shape box = (new Rectangle2D.Double(x, y, width, height));
+        myCanvas.draw(box);
    }
 }
 
